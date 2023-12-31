@@ -34,7 +34,7 @@ export default function Professionals() {
     <Layout>
     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {data.professionals.nodes.map((professional) => (
-        <li className="gallery-item bg-blue-500 p-4 text-center" key={professional.databaseId}>
+        <li className="gallery-item bg-custom-blue p-4 text-center font-custom-font" key={professional.databaseId}>
           <ProfessionalCard professional={professional} />
         </li>
       ))}
