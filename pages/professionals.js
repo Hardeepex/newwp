@@ -32,9 +32,9 @@ export default function Professionals() {
 
   return (
     <Layout>
-    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
       {data.professionals.nodes.map((professional) => (
-        <li className="gallery-item" key={professional.databaseId}>
+        <li className="gallery-item rounded-lg overflow-hidden shadow-lg" key={professional.databaseId}>
           <ProfessionalCard professional={professional} />
         </li>
       ))}
